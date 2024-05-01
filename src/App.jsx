@@ -1,13 +1,18 @@
-import { useState } from 'react'
-
-function App() {
+import ButtonGradient from './assets/svg/ButtonGradient'
+import Button from './components/Button'
+import Header from './components/Header'
+import { BrowserRouter as Router } from 'react-router-dom'
+const App = () => {
 
   return (
-    <>
-      <h1 className="text-5xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <Router>
+      <div className='pt-[4.75re] lg:pt-[5.25rem] overflow-hidden '>
+        <Header />
+        {/* <Button className='mt-10'  >Something</Button> */}
+      </div>
+
+      <ButtonGradient />
+    </Router>
   )
 }
 
